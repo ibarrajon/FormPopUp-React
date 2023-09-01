@@ -1,0 +1,121 @@
+.container{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    margin: 5vh;
+}
+p{
+    margin-top: 5vh;
+    line-height: 5vh;
+}
+
+.contacto-input,
+.contacto-mensaje {
+    padding: 1vh;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    top: 10%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-container {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: rgb(61, 61, 61);
+    width: 100vh;
+    max-width: 120vh;
+    padding: 5vh;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.form-container label{
+    background-color: rgb(61, 61, 61);
+}
+
+.enviar-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(61, 61, 61);
+}
+
+.enviar-form {
+    background-color: #5d5b5b;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 20vh;
+    /*redondear el boton*/
+    padding: 1vh 5vh;
+    border: none;
+    /*quitar borde del boton*/
+    cursor: pointer;
+}
+
+.enviar-form:hover {
+    background-color: black;
+}
+
+/*CELULARES*/
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .enviar-form {
+        padding: 1vh 2vh;
+    }
+
+    .enviar-form,
+    .contacto-input,
+    .contacto-mensaje,
+    .form-container,
+    .contacto-input,
+    .contacto-mensaje {
+        font-size: 0.5rem;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .enviar-form {
+        padding: 1vh 2vh;
+    }
+
+    .enviar-form,
+    .contacto-input,
+    .contacto-mensaje,
+    .form-container,
+    .contacto-input,
+    .contacto-mensaje {
+        font-size: 0.7rem;
+    }
+}
+
+/*TABLETS Y MONITORES CHICOS*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .enviar-form {
+        padding: 1vh 5vh;
+    }
+
+    .enviar-form,
+    .contacto-input,
+    .contacto-mensaje,
+    .form-container,
+    .contacto-input,
+    .contacto-mensaje {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,12 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color:rgb(30, 30, 31);
+  }
+  
+  body {
+    margin-left: 7vh;
+    margin-right: 7vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+  }
