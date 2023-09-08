@@ -16,11 +16,11 @@ const Home = () => {
     
         emailjs.sendForm('service_7mr5h09', 'template_6m83kyl', form.current, 'H_mOvcyS7nF4y0zOk')
           .then((result) => {
-              console.log("Enviado:",result.text);
+              console.log("Enviado: ",result.text);
               toggleEnviado();
               togglePopup();
           }, (error) => {
-              console.log("Error:",error.text);
+              console.log("Error: ",error.text);
           });
       };
 
